@@ -28,3 +28,13 @@ To stop/start it:
 
     # start
     sudo launchctl start net.aevar.HansaWorld
+
+To see what's going on with the program:
+
+    # Check for HansaWorld in the system log
+    grep HansaWorld /var/log/system.l
+
+Or follow the log in real-time:
+
+    # Will print new events from HansaWorld as they arrive
+    tail -f /var/log/system.log | grep HansaWorld
