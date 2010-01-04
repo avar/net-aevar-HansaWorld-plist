@@ -19,5 +19,9 @@
 
   <key>GroupName</key>
   <string>wheel</string>
+
+  <!-- Start at bootup -->
+  <key>RunAtLoad</key>
+  <true/>
 </dict>
 </plist>

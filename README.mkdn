@@ -9,13 +9,22 @@ program to load & start it:
     # Loads the configuration
     sudo launchctl load -w /System/Library/LaunchDaemons/net.aevar.HansaWorld.plist
 
-    # Starts the program
-    sudo launchctl start -w /System/Library/LaunchDaemons/net.aevar.HansaWorld.plist
-
-Then to check if it's running:
+This will automatically start the program, to check if it's really running:
 
     # Check if the program is running
     sudo launchctl list | grep HansaWorld
-    713     -       net.aevar.HansaWorld
+    26     -       net.aevar.HansaWorld
 
-Here you can see it's running as PID 713.
+Here you can see it's running as PID 26. It's also possible to check on it with `ps`:
+
+    ps -p 26
+      PID TTY           TIME CMD
+       26 ??         0:06.87 /Applications/HansaServer/HansaWorld
+
+To stop/start it:
+
+    # stop
+    sudo launchctl stop net.aevar.HansaWorld
+
+    # start
+    sudo launchctl start net.aevar.HansaWorld
