@@ -33,7 +33,7 @@ To stop/start it:
 To see what's going on with the program:
 
     # Check for HansaWorld in the system log
-    grep HansaWorld /var/log/system.l
+    grep HansaWorld /var/log/system.log
 
 Or follow the log in real-time:
 
