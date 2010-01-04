@@ -1,0 +1,10 @@
+This is a startup script for the older Hansax program on older Mac OS
+X systems (probably OSX 10.3) that don't have the new launchd
+facility. I wrote it in 2004.
+
+It assumes that the Hansax program is at `/Hansax/Hansax`. To use it:
+
+    sudo mkdir /System/Libary/StartupItems/Hansa
+    sudo cp Hansa StartupParameters.plist /System/Libary/StartupItems/Hansa/
+
+Then when you reboot you'll see "Starting Hansa Financials".

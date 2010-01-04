@@ -1,0 +1,11 @@
+{
+  Description     = "Hansa Financials";
+  Provides        = ("Hansa Financials");
+  Requires        = ("Network");
+  OrderPreference = "Last";
+  Messages =
+  {
+    start = "Starting Hansa Financials";
+    stop  = "Stopping Hansa Financials";
+  };
+}

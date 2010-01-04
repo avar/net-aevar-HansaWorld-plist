@@ -1,0 +1,35 @@
+#!/bin/sh
+
+##
+# Hansa Fianacials Startup script
+# Author: Ævar Arnfjörð Bjarmason
+# Licence: Public domain
+##
+
+. /etc/rc.common
+
+StartService ()
+{
+	ConsoleMessage "Starting Hansa Financials"
+	# We need to change directory into /Hansax or it
+	# wont find hanca.hct ( incompetent programmer :)
+	cd /Hansax
+	./Hansax
+	cd -
+}
+
+StopService ()
+{
+	ConsoleMessage "Stopping Hansa Financials"
+	killall Hansax
+}
+
+
+RestartService ()
+{
+	ConsoleMessage "Restarting Hansa Financials"
+	StopService
+	StartService
+}
+
+RunService "$1"
