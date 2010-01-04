@@ -1,6 +1,7 @@
-This is a LaunchDaemon configuration for Mac OS X for the HansaServer
-program which is a bookkeeping program for Mac OS X which doesn't come
-with an init file.
+This is a LaunchDaemon configuration for Mac OS X for
+[HansaWorld's](http://www.hansaworld.com/) HansaServer program, it's a
+proprietary bookkeeping program for Mac OS X that doesn't come with an
+init file.
 
 To use it just drag `net.aevar.HansaWorld.plist` to
 `/System/Library/LaunchDaemons/`. Then use the Mac OS X `launchctl`
