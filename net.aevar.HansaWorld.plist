@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Disabled</key>
+  <true/>
+
+  <key>Label</key>
+  <string>net.aevar.HansaWorld</string>
+
+  <key>WorkingDirectory</key>
+  <string>/Applications/HansaServer</string>
+
+  <key>Program</key>
+  <string>/Applications/HansaServer/HansaWorld</string>
+
+  <key>UserName</key>
+  <string>Skrifstofa</string>
+
+  <key>GroupName</key>
+  <string>wheel</string>
+</dict>
+</plist>

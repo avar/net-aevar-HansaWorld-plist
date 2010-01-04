@@ -1,0 +1,21 @@
+This is a LaunchDaemon configuration for Mac OS X for the HansaServer
+program which is a bookkeeping program for Mac OS X which doesn't come
+with an init file.
+
+To use it just drag `net.aevar.HansaWorld.plist` to
+`/System/Library/LaunchDaemons/`. Then use the Mac OS X `launchctl`
+program to load & start it:
+
+    # Loads the configuration
+    sudo launchctl load -w /System/Library/LaunchDaemons/net.aevar.HansaWorld.plist
+
+    # Starts the program
+    sudo launchctl start -w /System/Library/LaunchDaemons/net.aevar.HansaWorld.plist
+
+Then to check if it's running:
+
+    # Check if the program is running
+    sudo launchctl list | grep HansaWorld
+    713     -       net.aevar.HansaWorld
+
+Here you can see it's running as PID 713.
